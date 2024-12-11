@@ -27,4 +27,4 @@ jobs:
       - name: Create Alias
         run: |
           branch_name=$(echo "${GITHUB_HEAD_REF}" | sed 's/[^a-zA-Z0-9-]/-/g')
-          vercel alias set ${{ env.deployment_url }} ${branch_name}.preview.brantashe.dev --token=${{ secrets.VERCEL_TOKEN }} --scope=${{vars.TEAM_NAME}}
+          vercel alias set ${{ env.deployment_url }} ${branch_name}.preview.brantashe.dev --token=${{ secrets.VERCEL_TOKEN }} --scope=willashes-projects
